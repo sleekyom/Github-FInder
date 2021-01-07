@@ -8,6 +8,7 @@ const User = ({ loading, user, getUser, getUserRepos, repos, match }) => {
 	useEffect(() => {
 		getUser(match.params.login);
 		getUserRepos(match.params.login);
+		// eslint-disabled-next-line
 	}, []);
 
 	const {
